@@ -1,25 +1,17 @@
-# Resource Group 1
-resource "azurerm_resource_group" "rg1" {
-  name     = var.rg1_name
-  location = var.rg1_location
+# Create the first level management group
+resource "azurerm_management_group" "level1_mgroup" {
+  name                       = var.level1_name
+  display_name               = var.level1_display_name
+  parent_management_group_id = var.parent_management_group_id
+  subscription_ids           = var.level1_subscription_ids
 }
 
-# Resource Group 2
-resource "azurerm_resource_group" "rg2" {
-  name     = var.rg2_name
-  location = var.rg2_location
-}
-
-# Resource Group 3
-resource "azurerm_resource_group" "rg3" {
-  name     = var.rg3_name
-  location = var.rg3_location
-}
-
-# Resource Group 4
-resource "azurerm_resource_group" "rg4" {
-  name     = var.rg4_name
-  location = var.rg4_location
+# Create the second level management group
+resource "azurerm_management_group" "level2_mgroup" {
+  name                       = var.level2_name
+  display_name               = var.level2_display_name
+  parent_management_group_id = azurerm_management_group.level1_mgroup.id
+  subscription_ids           = var.level2_subscription_ids
 }
 
 #

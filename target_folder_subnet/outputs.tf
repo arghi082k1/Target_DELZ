@@ -1,21 +1,11 @@
-output "rg1_id" {
-  value       = azurerm_resource_group.rg1.id
-  description = "ID of Resource Group 1"
+output "level1_management_group_id" {
+  value       = azurerm_management_group.level1_mgroup.id
+  description = "ID of the first level management group"
 }
 
-output "rg2_id" {
-  value       = azurerm_resource_group.rg2.id
-  description = "ID of Resource Group 2"
-}
-
-output "rg3_id" {
-  value       = azurerm_resource_group.rg3.id
-  description = "ID of Resource Group 3"
-}
-
-output "rg4_id" {
-  value       = azurerm_resource_group.rg4.id
-  description = "ID of Resource Group 4"
+output "level2_management_group_id" {
+  value       = azurerm_management_group.level2_mgroup.id
+  description = "ID of the second level management group"
 }
 
 #
