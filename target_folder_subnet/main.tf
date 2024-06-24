@@ -1,25 +1,27 @@
-# Create the root management group
-resource "azurerm_management_group" "root" {
-  name                       = var.root_management_group_name
-  display_name               = var.root_management_group_display_name
-  parent_management_group_id = var.parent_management_group_id
-  subscription_ids           = var.subscription_ids
+#
+
+resource "azurerm_subscription" "subscription1" {
+  name = var.subscription1_name
 }
 
-# Create the child management group
-resource "azurerm_management_group" "child" {
-  name                       = var.child_management_group_name
-  display_name               = var.child_management_group_display_name
-  parent_management_group_id = azurerm_management_group.root.id
-  subscription_ids           = var.subscription_ids
+resource "azurerm_subscription" "subscription2" {
+  name = var.subscription2_name
 }
 
-# Create the grandchild management group
-resource "azurerm_management_group" "grandchild" {
-  name                       = var.grandchild_management_group_name
-  display_name               = var.grandchild_management_group_display_name
-  parent_management_group_id = azurerm_management_group.child.id
-  subscription_ids           = var.subscription_ids
+resource "azurerm_subscription" "subscription3" {
+  name = var.subscription3_name
+}
+
+resource "azurerm_subscription" "subscription4" {
+  name = var.subscription4_name
+}
+
+resource "azurerm_subscription" "subscription5" {
+  name = var.subscription5_name
+}
+
+resource "azurerm_subscription" "subscription6" {
+  name = var.subscription6_name
 }
 
 #

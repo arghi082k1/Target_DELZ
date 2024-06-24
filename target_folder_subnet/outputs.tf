@@ -1,16 +1,33 @@
-output "root_management_group_id" {
-  description = "ID of the root management group"
-  value       = azurerm_management_group.root.id
+#
+
+output "subscription1_id" {
+  value       = azurerm_subscription.subscription1.id
+  description = "ID of subscription 1"
 }
 
-output "child_management_group_id" {
-  description = "ID of the child management group"
-  value       = azurerm_management_group.child.id
+output "subscription2_id" {
+  value       = azurerm_subscription.subscription2.id
+  description = "ID of subscription 2"
 }
 
-output "grandchild_management_group_id" {
-  description = "ID of the grandchild management group"
-  value       = azurerm_management_group.grandchild.id
+output "subscription3_id" {
+  value       = azurerm_subscription.subscription3.id
+  description = "ID of subscription 3"
+}
+
+output "subscription4_id" {
+  value       = azurerm_subscription.subscription4.id
+  description = "ID of subscription 4"
+}
+
+output "subscription5_id" {
+  value       = azurerm_subscription.subscription5.id
+  description = "ID of subscription 5"
+}
+
+output "subscription6_id" {
+  value       = azurerm_subscription.subscription6.id
+  description = "ID of subscription 6"
 }
 
 #

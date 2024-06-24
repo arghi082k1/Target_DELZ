@@ -1,42 +1,33 @@
-variable "root_management_group_name" {
+#
+
+variable "subscription1_name" {
   type        = string
-  description = "Name for the root management group"
+  description = "Name of subscription 1"
 }
 
-variable "root_management_group_display_name" {
+variable "subscription2_name" {
   type        = string
-  description = "Display name for the root management group"
+  description = "Name of subscription 2"
 }
 
-variable "child_management_group_name" {
+variable "subscription3_name" {
   type        = string
-  description = "Name for the child management group"
+  description = "Name of subscription 3"
 }
 
-variable "child_management_group_display_name" {
+variable "subscription4_name" {
   type        = string
-  description = "Display name for the child management group"
+  description = "Name of subscription 4"
 }
 
-variable "grandchild_management_group_name" {
+variable "subscription5_name" {
   type        = string
-  description = "Name for the grandchild management group"
+  description = "Name of subscription 5"
 }
 
-variable "grandchild_management_group_display_name" {
+variable "subscription6_name" {
   type        = string
-  description = "Display name for the grandchild management group"
-}
-
-variable "parent_management_group_id" {
-  type        = string
-  description = "The ID of the parent management group"
-}
-
-variable "subscription_ids" {
-  type        = list(string)
-  description = "A list of subscription GUIDs which should be assigned to the management groups"
-  default     = []
+  description = "Name of subscription 6"
 }
 
 #
