@@ -1,27 +1,25 @@
-#
-
-resource "azurerm_subscription" "subscription1" {
-  name = var.subscription1_name
+# Resource Group 1
+resource "azurerm_resource_group" "rg1" {
+  name     = var.rg1_name
+  location = var.rg1_location
 }
 
-resource "azurerm_subscription" "subscription2" {
-  name = var.subscription2_name
+# Resource Group 2
+resource "azurerm_resource_group" "rg2" {
+  name     = var.rg2_name
+  location = var.rg2_location
 }
 
-resource "azurerm_subscription" "subscription3" {
-  name = var.subscription3_name
+# Resource Group 3
+resource "azurerm_resource_group" "rg3" {
+  name     = var.rg3_name
+  location = var.rg3_location
 }
 
-resource "azurerm_subscription" "subscription4" {
-  name = var.subscription4_name
-}
-
-resource "azurerm_subscription" "subscription5" {
-  name = var.subscription5_name
-}
-
-resource "azurerm_subscription" "subscription6" {
-  name = var.subscription6_name
+# Resource Group 4
+resource "azurerm_resource_group" "rg4" {
+  name     = var.rg4_name
+  location = var.rg4_location
 }
 
 #

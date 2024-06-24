@@ -1,33 +1,41 @@
-#
-
-variable "subscription1_name" {
+variable "rg1_name" {
   type        = string
-  description = "Name of subscription 1"
+  description = "Name for Resource Group 1"
 }
 
-variable "subscription2_name" {
+variable "rg1_location" {
   type        = string
-  description = "Name of subscription 2"
+  description = "Location for Resource Group 1"
 }
 
-variable "subscription3_name" {
+variable "rg2_name" {
   type        = string
-  description = "Name of subscription 3"
+  description = "Name for Resource Group 2"
 }
 
-variable "subscription4_name" {
+variable "rg2_location" {
   type        = string
-  description = "Name of subscription 4"
+  description = "Location for Resource Group 2"
 }
 
-variable "subscription5_name" {
+variable "rg3_name" {
   type        = string
-  description = "Name of subscription 5"
+  description = "Name for Resource Group 3"
 }
 
-variable "subscription6_name" {
+variable "rg3_location" {
   type        = string
-  description = "Name of subscription 6"
+  description = "Location for Resource Group 3"
+}
+
+variable "rg4_name" {
+  type        = string
+  description = "Name for Resource Group 4"
+}
+
+variable "rg4_location" {
+  type        = string
+  description = "Location for Resource Group 4"
 }
 
 #

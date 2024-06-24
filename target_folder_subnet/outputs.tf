@@ -1,33 +1,21 @@
-#
-
-output "subscription1_id" {
-  value       = azurerm_subscription.subscription1.id
-  description = "ID of subscription 1"
+output "rg1_id" {
+  value       = azurerm_resource_group.rg1.id
+  description = "ID of Resource Group 1"
 }
 
-output "subscription2_id" {
-  value       = azurerm_subscription.subscription2.id
-  description = "ID of subscription 2"
+output "rg2_id" {
+  value       = azurerm_resource_group.rg2.id
+  description = "ID of Resource Group 2"
 }
 
-output "subscription3_id" {
-  value       = azurerm_subscription.subscription3.id
-  description = "ID of subscription 3"
+output "rg3_id" {
+  value       = azurerm_resource_group.rg3.id
+  description = "ID of Resource Group 3"
 }
 
-output "subscription4_id" {
-  value       = azurerm_subscription.subscription4.id
-  description = "ID of subscription 4"
-}
-
-output "subscription5_id" {
-  value       = azurerm_subscription.subscription5.id
-  description = "ID of subscription 5"
-}
-
-output "subscription6_id" {
-  value       = azurerm_subscription.subscription6.id
-  description = "ID of subscription 6"
+output "rg4_id" {
+  value       = azurerm_resource_group.rg4.id
+  description = "ID of Resource Group 4"
 }
 
 #
