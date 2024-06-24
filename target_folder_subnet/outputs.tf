@@ -1,11 +1,23 @@
-output "level1_management_group_id" {
-  value       = azurerm_management_group.level1_mgroup.id
-  description = "ID of the first level management group"
+#
+
+output "subscription1_id" {
+  value       = azurerm_subscription.subscription1.id
+  description = "ID of subscription 1"
 }
 
-output "level2_management_group_id" {
-  value       = azurerm_management_group.level2_mgroup.id
-  description = "ID of the second level management group"
+output "subscription2_id" {
+  value       = azurerm_subscription.subscription2.id
+  description = "ID of subscription 2"
+}
+
+output "subscription3_id" {
+  value       = azurerm_subscription.subscription3.id
+  description = "ID of subscription 3"
+}
+
+output "subscription4_id" {
+  value       = azurerm_subscription.subscription4.id
+  description = "ID of subscription 4"
 }
 
 #

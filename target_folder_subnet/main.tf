@@ -1,17 +1,19 @@
-# Create the first level management group
-resource "azurerm_management_group" "level1_mgroup" {
-  name                       = var.level1_name
-  display_name               = var.level1_display_name
-  parent_management_group_id = var.parent_management_group_id
-  subscription_ids           = var.level1_subscription_ids
+#
+
+resource "azurerm_subscription" "subscription1" {
+  name = var.subscription1_name
 }
 
-# Create the second level management group
-resource "azurerm_management_group" "level2_mgroup" {
-  name                       = var.level2_name
-  display_name               = var.level2_display_name
-  parent_management_group_id = azurerm_management_group.level1_mgroup.id
-  subscription_ids           = var.level2_subscription_ids
+resource "azurerm_subscription" "subscription2" {
+  name = var.subscription2_name
+}
+
+resource "azurerm_subscription" "subscription3" {
+  name = var.subscription3_name
+}
+
+resource "azurerm_subscription" "subscription4" {
+  name = var.subscription4_name
 }
 
 #
