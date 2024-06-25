@@ -1,31 +1,54 @@
-variable "resource_group1_name" {
+variable "level1_name" {
   type        = string
-  description = "Name for Resource Group 1"
+  description = "Name for level 1 management group"
 }
 
-variable "resource_group1_location" {
+variable "level1_display_name" {
   type        = string
-  description = "Location for Resource Group 1"
+  description = "Display name for level 1 management group"
 }
 
-variable "resource_group2_name" {
-  type        = string
-  description = "Name for Resource Group 2"
+variable "level1_subscription_ids" {
+  type        = list(string)
+  description = "List of subscription GUIDs for level 1 management group"
+  default     = []
 }
 
-variable "resource_group2_location" {
+variable "level2_name" {
   type        = string
-  description = "Location for Resource Group 2"
+  description = "Name for level 2 management group"
 }
 
-variable "resource_group3_name" {
+variable "level2_display_name" {
   type        = string
-  description = "Name for Resource Group 3"
+  description = "Display name for level 2 management group"
 }
 
-variable "resource_group3_location" {
+variable "level2_subscription_ids" {
+  type        = list(string)
+  description = "List of subscription GUIDs for level 2 management group"
+  default     = []
+}
+
+variable "level3_name" {
   type        = string
-  description = "Location for Resource Group 3"
+  description = "Name for level 3 management group"
+}
+
+variable "level3_display_name" {
+  type        = string
+  description = "Display name for level 3 management group"
+}
+
+variable "level3_subscription_ids" {
+  type        = list(string)
+  description = "List of subscription GUIDs for level 3 management group"
+  default     = []
+}
+
+variable "parent_management_group_id" {
+  type        = string
+  description = "The ID of the parent management group"
 }
 
 #
