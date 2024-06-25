@@ -1,4 +1,4 @@
-# Create a 1 level management group
+# Create the management group
 resource "azurerm_management_group" "mgroup" {
   name              = var.name
   display_name      = var.display_name
