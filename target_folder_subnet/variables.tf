@@ -1,54 +1,22 @@
-variable "level1_name" {
+variable "name" {
   type        = string
-  description = "Name for level 1 management group"
+  description = "Name for the management group"
 }
 
-variable "level1_display_name" {
+variable "display_name" {
   type        = string
-  description = "Display name for level 1 management group"
-}
-
-variable "level1_subscription_ids" {
-  type        = list(string)
-  description = "List of subscription GUIDs for level 1 management group"
-  default     = []
-}
-
-variable "level2_name" {
-  type        = string
-  description = "Name for level 2 management group"
-}
-
-variable "level2_display_name" {
-  type        = string
-  description = "Display name for level 2 management group"
-}
-
-variable "level2_subscription_ids" {
-  type        = list(string)
-  description = "List of subscription GUIDs for level 2 management group"
-  default     = []
-}
-
-variable "level3_name" {
-  type        = string
-  description = "Name for level 3 management group"
-}
-
-variable "level3_display_name" {
-  type        = string
-  description = "Display name for level 3 management group"
-}
-
-variable "level3_subscription_ids" {
-  type        = list(string)
-  description = "List of subscription GUIDs for level 3 management group"
-  default     = []
+  description = "Friendly name for this management group. If not specified, this will be the same as the name"
 }
 
 variable "parent_management_group_id" {
   type        = string
-  description = "The ID of the parent management group"
+  description = "The ID of the parent management group."
+}
+
+variable "subscription_ids" {
+  type        = list(string)
+  description = "A list of subscription GUIDs which should be assigned to the management group"
+  default     = []
 }
 
 #
