@@ -1,4 +1,4 @@
-# Resource block for creating Azure management group
+# Resource block for creating the Azure management group
 resource "azurerm_management_group" "mgroup" {
   display_name               = var.display_name
   name                       = var.name

@@ -1,4 +1,4 @@
-# Variable block for defining input variables
+# Variable block for defining the required variables
 variable "display_name" {
   description = "The display name of the management group"
   type        = string
@@ -15,7 +15,7 @@ variable "parent_management_group_id" {
 }
 
 variable "subscription_ids" {
-  description = "The list of subscription IDs to associate with the management group"
+  description = "The list of subscription IDs to be associated with the management group"
   type        = list(string)
 }
 
