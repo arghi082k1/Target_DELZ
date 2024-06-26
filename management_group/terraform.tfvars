@@ -1,7 +1,6 @@
-# Variables values for the management group
-name                      = "my-management-group"
-display_name              = "My Management Group"
-parent_management_group_id = "parent-management-group-id"
-subscription_ids          = ["subscription-id-1", "subscription-id-2", "subscription-id-3"]
+display_name = "Management Group"
+name = "mg1"
+parent_management_group_id = "existing_management_group_id"
+subscription_ids = ["subscription_id1", "subscription_id2", "subscription_id3", "subscription_id4"]
 
 #
