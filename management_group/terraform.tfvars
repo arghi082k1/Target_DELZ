@@ -1,9 +1,5 @@
-level1_name = "Level1"
-level1_display_name = "Level 1 Management Group"
-level2_name = "Level2"
-level2_display_name = "Level 2 Management Group"
-level3_name = "Level3"
-level3_display_name = "Level 3 Management Group"
-parent_id = "/providers/Microsoft.Management/managementGroups/ParentGroup"
-
+display_name = "Subscription 1"
+name = "subscription1"
+parent_management_group_id = "existing_management_group_id"
+subscription_ids = ["subscription_id1", "subscription_id2", "subscription_id3"]
 #
