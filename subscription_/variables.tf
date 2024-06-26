@@ -1,22 +1,21 @@
-# Variable block for defining input variables
-variable "display_name" {
-  description = "The display name of the management group"
+variable "resource_group_name1" {
+  description = "Name of the first resource group"
   type        = string
 }
 
-variable "name" {
-  description = "The name of the management group"
+variable "resource_group_location1" {
+  description = "Location of the first resource group"
   type        = string
 }
 
-variable "parent_management_group_id" {
-  description = "The ID of the parent management group"
+variable "resource_group_name2" {
+  description = "Name of the second resource group"
   type        = string
 }
 
-variable "subscription_ids" {
-  description = "The list of subscription IDs to associate with the management group"
-  type        = list(string)
+variable "resource_group_location2" {
+  description = "Location of the second resource group"
+  type        = string
 }
 
 #

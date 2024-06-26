@@ -1,6 +1,11 @@
-# Output block for displaying the created management group details
-output "management_group_details" {
-  value = azurerm_management_group.mgroup
+output "resource_group1_id" {
+  value       = azurerm_resource_group.rg1.id
+  description = "ID of the first resource group"
+}
+
+output "resource_group2_id" {
+  value       = azurerm_resource_group.rg2.id
+  description = "ID of the second resource group"
 }
 
 #

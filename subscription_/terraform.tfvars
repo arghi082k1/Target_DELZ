@@ -1,7 +1,7 @@
-# Input values for the variables
-display_name               = "Management Group 1"
-name                       = "mg1"
-parent_management_group_id = "parent-mg-id"
-subscription_ids           = ["sub-id-1", "sub-id-2", "sub-id-3"]
+resource_group_name1     = "my-resource-group-1"
+resource_group_location1 = "eastus"
+
+resource_group_name2     = "my-resource-group-2"
+resource_group_location2 = "westus"
 
 #

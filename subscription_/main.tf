@@ -1,9 +1,13 @@
-# Resource block for creating Azure management group
-resource "azurerm_management_group" "mgroup" {
-  display_name               = var.display_name
-  name                       = var.name
-  parent_management_group_id = var.parent_management_group_id 
-  subscription_ids           = var.subscription_ids
+# Resource Group 1
+resource "azurerm_resource_group" "rg1" {
+  name     = var.resource_group_name1
+  location = var.resource_group_location1
+}
+
+# Resource Group 2
+resource "azurerm_resource_group" "rg2" {
+  name     = var.resource_group_name2
+  location = var.resource_group_location2
 }
 
 #
