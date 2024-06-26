@@ -1,7 +1,13 @@
-resource_group_name1     = "my-resource-group-1"
-resource_group_location1 = "eastus"
+rg1_name     = "ResourceGroup1"
+rg1_location = "East US"
 
-resource_group_name2     = "my-resource-group-2"
-resource_group_location2 = "westus"
+rg2_name     = "ResourceGroup2"
+rg2_location = "West Europe"
+
+rg3_name     = "ResourceGroup3"
+rg3_location = "Central US"
+
+rg4_name     = "ResourceGroup4"
+rg4_location = "Southeast Asia"
 
 #

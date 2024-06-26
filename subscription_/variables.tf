@@ -1,20 +1,40 @@
-variable "resource_group_name1" {
-  description = "Name of the first resource group"
+variable "rg1_name" {
+  description = "Name of Resource Group 1"
   type        = string
 }
 
-variable "resource_group_location1" {
-  description = "Location of the first resource group"
+variable "rg1_location" {
+  description = "Location of Resource Group 1"
   type        = string
 }
 
-variable "resource_group_name2" {
-  description = "Name of the second resource group"
+variable "rg2_name" {
+  description = "Name of Resource Group 2"
   type        = string
 }
 
-variable "resource_group_location2" {
-  description = "Location of the second resource group"
+variable "rg2_location" {
+  description = "Location of Resource Group 2"
+  type        = string
+}
+
+variable "rg3_name" {
+  description = "Name of Resource Group 3"
+  type        = string
+}
+
+variable "rg3_location" {
+  description = "Location of Resource Group 3"
+  type        = string
+}
+
+variable "rg4_name" {
+  description = "Name of Resource Group 4"
+  type        = string
+}
+
+variable "rg4_location" {
+  description = "Location of Resource Group 4"
   type        = string
 }
 
